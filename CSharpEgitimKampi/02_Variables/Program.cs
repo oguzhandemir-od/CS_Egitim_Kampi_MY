@@ -67,6 +67,35 @@ namespace _02_Variables
             //Console.WriteLine(symbol);
 
             #endregion
+
+            #region Klavyeden Veri Girişleri String Değişkenler
+
+            Console.WriteLine("**** CSharp Hava Yolları Yolcu Bilgisi ****");
+            Console.WriteLine();
+
+            string passengerName, passengerSurname, passengerDistrict, passengerCity, passengerAge, passengerIdentityNumber;
+
+            Console.Write("Yolcu Adı: ");
+            passengerName = Console.ReadLine();
+            Console.Write("Yolcu Soyadı: ");
+            passengerSurname = Console.ReadLine();
+            Console.Write("İlçe: ");
+            passengerDistrict = Console.ReadLine();
+            Console.Write("Şehir: ");
+            passengerCity = Console.ReadLine();
+            Console.Write("Yaş: ");
+            passengerAge = Console.ReadLine();
+            Console.Write("TC Kimlik Numarası: ");
+            passengerIdentityNumber = Console.ReadLine();
+
+            Console.WriteLine();
+
+            Console.WriteLine("--------------------------");
+            Console.WriteLine("Yolcu TC Kimlik No: " + passengerIdentityNumber + " - Yolcu Ad Soyad: " +
+                passengerName + " " + passengerSurname + " " + passengerDistrict + " / " +
+                passengerCity + " " + passengerAge);
+
+            #endregion
             Console.ReadKey();
         }
     }
