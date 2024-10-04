@@ -70,30 +70,59 @@ namespace _02_Variables
 
             #region Klavyeden Veri Girişleri String Değişkenler
 
-            Console.WriteLine("**** CSharp Hava Yolları Yolcu Bilgisi ****");
+            //Console.WriteLine("**** CSharp Hava Yolları Yolcu Bilgisi ****");
+            //Console.WriteLine();
+
+            //string passengerName, passengerSurname, passengerDistrict, passengerCity, passengerAge, passengerIdentityNumber;
+
+            //Console.Write("Yolcu Adı: ");
+            //passengerName = Console.ReadLine();
+            //Console.Write("Yolcu Soyadı: ");
+            //passengerSurname = Console.ReadLine();
+            //Console.Write("İlçe: ");
+            //passengerDistrict = Console.ReadLine();
+            //Console.Write("Şehir: ");
+            //passengerCity = Console.ReadLine();
+            //Console.Write("Yaş: ");
+            //passengerAge = Console.ReadLine();
+            //Console.Write("TC Kimlik Numarası: ");
+            //passengerIdentityNumber = Console.ReadLine();
+
+            //Console.WriteLine();
+
+            //Console.WriteLine("--------------------------");
+            //Console.WriteLine("Yolcu TC Kimlik No: " + passengerIdentityNumber + " - Yolcu Ad Soyad: " +
+            //    passengerName + " " + passengerSurname + " " + passengerDistrict + " / " +
+            //    passengerCity + " " + passengerAge);
+
+            #endregion
+
+            #region Klavyeden Tam Sayı Girişleri ve Dönüşümler
+
+            int shoesPrice, computerPrice, chairPrice, tvPrice;
+            shoesPrice = 1000;
+            computerPrice = 20000;
+            chairPrice = 5000;
+            tvPrice = 12000;
+
+            int shoesCount, computerCount, chairCount, tvCount;
+            Console.Write("Lütfen aldığınız ayakkabı sayısını giriniz: ");
+            shoesCount=int.Parse(Console.ReadLine());
+
+            Console.Write("Lütfen aldığınız bilgisayar sayısını giriniz: ");
+            computerCount = int.Parse(Console.ReadLine());
+
+            Console.Write("Lütfen aldığınız sandalye sayısını giriniz: ");
+            chairCount = int.Parse(Console.ReadLine());
+
+            Console.Write("Lütfen aldığınız televizyon sayısını giriniz: ");
+            tvCount = int.Parse(Console.ReadLine());
+
+            int totalPrice=shoesCount*shoesPrice+computerCount+computerPrice+chairCount*chairPrice+
+                tvCount*tvPrice;
+
             Console.WriteLine();
-
-            string passengerName, passengerSurname, passengerDistrict, passengerCity, passengerAge, passengerIdentityNumber;
-
-            Console.Write("Yolcu Adı: ");
-            passengerName = Console.ReadLine();
-            Console.Write("Yolcu Soyadı: ");
-            passengerSurname = Console.ReadLine();
-            Console.Write("İlçe: ");
-            passengerDistrict = Console.ReadLine();
-            Console.Write("Şehir: ");
-            passengerCity = Console.ReadLine();
-            Console.Write("Yaş: ");
-            passengerAge = Console.ReadLine();
-            Console.Write("TC Kimlik Numarası: ");
-            passengerIdentityNumber = Console.ReadLine();
-
-            Console.WriteLine();
-
-            Console.WriteLine("--------------------------");
-            Console.WriteLine("Yolcu TC Kimlik No: " + passengerIdentityNumber + " - Yolcu Ad Soyad: " +
-                passengerName + " " + passengerSurname + " " + passengerDistrict + " / " +
-                passengerCity + " " + passengerAge);
+            Console.WriteLine("Toplam ödemeniz gereken tutar: " + totalPrice + " TL");
 
             #endregion
             Console.ReadKey();
