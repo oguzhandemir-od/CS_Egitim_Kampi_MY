@@ -128,21 +128,32 @@ namespace _02_Variables
 
             #region Klavyeden Ondalıklı Sayı İşlemleri
 
-            double exam1, exam2, exam3, result;
+            //double exam1, exam2, exam3, result;
 
-            Console.Write("Lütfen 1. sınav notunu giriniz: ");
-            exam1 = double.Parse(Console.ReadLine());
+            //Console.Write("Lütfen 1. sınav notunu giriniz: ");
+            //exam1 = double.Parse(Console.ReadLine());
 
-            Console.Write("Lütfen 2. sınav notunu giriniz: ");
-            exam2 = double.Parse(Console.ReadLine());
+            //Console.Write("Lütfen 2. sınav notunu giriniz: ");
+            //exam2 = double.Parse(Console.ReadLine());
 
-            Console.Write("Lütfen 3. sınav notunu giriniz: ");
-            exam3 = double.Parse(Console.ReadLine());
+            //Console.Write("Lütfen 3. sınav notunu giriniz: ");
+            //exam3 = double.Parse(Console.ReadLine());
 
-            result = (exam1 + exam2 + exam3) / 3;
+            //result = (exam1 + exam2 + exam3) / 3;
 
-            Console.WriteLine();
-            Console.WriteLine("Sınav Ortalamanız: " + result);
+            //Console.WriteLine();
+            //Console.WriteLine("Sınav Ortalamanız: " + result);
+
+            #endregion
+
+            #region Klavyeden Karakter Girişleri
+
+            char gender;
+            Console.Write("Lütfen cinsiyet seçiniz: ");
+            gender=char.Parse(Console.ReadLine());
+
+            Console.WriteLine("Seçtiğiniz cinsiyet: " + gender);
+
 
             #endregion
             Console.ReadKey();
