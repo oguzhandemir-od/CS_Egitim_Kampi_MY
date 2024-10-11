@@ -28,6 +28,15 @@ namespace _05_LoopsWithStars
 
             #endregion
 
+            #region 10 Rows, 10 Stars in Each Row
+
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.Write("**********");
+            }
+
+            #endregion
+
             Console.ReadKey();
         }
     }
