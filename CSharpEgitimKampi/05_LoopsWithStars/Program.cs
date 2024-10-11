@@ -18,7 +18,16 @@ namespace _05_LoopsWithStars
             }
 
             #endregion
-            
+
+            #region Side by Side 10 Stars
+
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.Write("*");
+            }
+
+            #endregion
+
             Console.ReadKey();
         }
     }
