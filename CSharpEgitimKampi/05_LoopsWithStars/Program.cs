@@ -87,24 +87,42 @@ namespace _05_LoopsWithStars
 
             #region Half Diamond 2
 
+            //int n = 5;
+
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    for(int j=n-1;j>0;j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for(int k=1;k<=2*i-1;k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //for(int i=n-1;i>=1;i--)
+            //{
+            //    for(int j=n-1;j>0;j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for(int k=1;k<=2*i-1;k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Pyramid
+
             int n = 5;
-
-            for (int i = 1; i <= n; i++)
+            for(int i=1;i<=n; i++)
             {
-                for(int j=n-1;j>0;j--)
-                {
-                    Console.Write(" ");
-                }
-                for(int k=1;k<=2*i-1;k++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
-
-            for(int i=n-1;i>=1;i--)
-            {
-                for(int j=n-1;j>0;j--)
+                for(int j=n-i;j>0;j--)
                 {
                     Console.Write(" ");
                 }
