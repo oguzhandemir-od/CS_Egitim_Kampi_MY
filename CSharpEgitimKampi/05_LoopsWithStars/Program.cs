@@ -12,27 +12,40 @@ namespace _05_LoopsWithStars
         {
             #region Top and Bottom 10 Stars
 
-            for (int i = 0; i <=10; i++)
-            {
-                Console.WriteLine("*");
-            }
+            //for (int i = 0; i <=10; i++)
+            //{
+            //    Console.WriteLine("*");
+            //}
 
             #endregion
 
             #region Side by Side 10 Stars
 
-            for (int i = 0; i <= 10; i++)
-            {
-                Console.Write("*");
-            }
+            //for (int i = 0; i <= 10; i++)
+            //{
+            //    Console.Write("*");
+            //}
 
             #endregion
 
             #region 10 Rows, 10 Stars in Each Row
 
-            for (int i = 0; i <= 10; i++)
+            //for (int i = 0; i <= 10; i++)
+            //{
+            //    Console.Write("**********");
+            //}
+
+            #endregion
+
+            #region Right Triangle
+
+            for (int i = 1; i <=5; i++)
             {
-                Console.Write("**********");
+                for(int j=1;j<=i;j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
             }
 
             #endregion
