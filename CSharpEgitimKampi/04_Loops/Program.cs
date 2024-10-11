@@ -84,7 +84,7 @@ namespace _04_Loops
 
             #endregion
 
-            #region Example
+            #region Example 1
 
             //int bacteria = 1;
 
@@ -125,6 +125,24 @@ namespace _04_Loops
 
             //Console.WriteLine(sum);
 
+            #endregion
+
+            #region Example 2
+
+            // Klavyeden girilen 3 basamaklı sayının basamakları toplamını hesaplayan kodu yazınız.
+
+            Console.Write("3 basamaklı bir sayı giriniz: ");
+            int number = int.Parse(Console.ReadLine());
+            int ones, tens, hundreds;
+            int sum;
+
+            ones = number % 10;
+            tens = (number % 100) / 10;
+            hundreds = number / 100;
+
+            sum = ones + tens + hundreds;
+            Console.WriteLine(hundreds + "-" + tens + "-" + ones);
+            Console.WriteLine("Basamaklar Toplamı: " + sum);
             #endregion
             Console.ReadKey();
         }
