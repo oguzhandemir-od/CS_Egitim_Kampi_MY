@@ -261,6 +261,43 @@ namespace _03_MakingDecision
             }
 
             #endregion
+
+            #region Calculator Example
+
+            int number1, number2, result;
+            char symbol;
+            Console.Write("1. Sayıyı Giriniz: ");
+            number1 = int.Parse(Console.ReadLine());
+
+            Console.Write("2. Sayıyı Giriniz: ");
+            number2 = int.Parse(Console.ReadLine());
+
+            Console.Write("Lütfen yapmak istediğiniz işlemi giriniz(+ - * /): ");
+            symbol = char.Parse(Console.ReadLine());
+
+            switch (symbol)
+            {
+                case '+':
+                    result = number1 + number2;
+                    Console.WriteLine("Toplam: " + result);
+                    break;
+                case '-':
+                    result = number1 - number2;
+                    Console.WriteLine("Fark: " + result);
+                    break;
+                case '*':
+                    result = number1 * number2;
+                    Console.WriteLine("Çarpım: " + result);
+                    break;
+                case '/':
+                    result = number1 / number2;
+                    Console.WriteLine("Bölüm: " + result);
+                    break;
+                default:
+                    break;
+            }
+
+            #endregion
             Console.ReadKey();
         }
     }
