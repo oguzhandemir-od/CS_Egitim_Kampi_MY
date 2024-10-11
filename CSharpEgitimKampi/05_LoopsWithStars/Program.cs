@@ -119,14 +119,32 @@ namespace _05_LoopsWithStars
 
             #region Pyramid
 
+            //int n = 5;
+            //for(int i=1;i<=n; i++)
+            //{
+            //    for(int j=n-i;j>0;j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for(int k=1;k<=2*i-1;k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Reverse Pyramid            
+
             int n = 5;
-            for(int i=1;i<=n; i++)
+            for (int i = n; i >= 1; i--)
             {
-                for(int j=n-i;j>0;j--)
+                for (int j = n - i; j > 0; j--)
                 {
                     Console.Write(" ");
                 }
-                for(int k=1;k<=2*i-1;k++)
+                for (int k = 1; k <= 2 * i - 1; k++)
                 {
                     Console.Write("*");
                 }
