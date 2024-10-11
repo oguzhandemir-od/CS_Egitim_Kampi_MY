@@ -83,6 +83,18 @@ namespace _04_Loops
             //Console.WriteLine(counter);
 
             #endregion
+
+            #region Example
+
+            //int bacteria = 1;
+
+            //for (int i = 1; i <= 24; i++)
+            //{
+            //    bacteria *= 2;
+            //    Console.WriteLine(i + ". Saat Sonunda: " + bacteria);
+            //}
+
+            #endregion
             Console.ReadKey();
         }
     }
