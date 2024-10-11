@@ -52,9 +52,31 @@ namespace _05_LoopsWithStars
 
             #region Reverse Right Triangle
 
-            for (int i = 5; i >= 1; i--)
+            //for (int i = 5; i >= 1; i--)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Half Diamond
+
+            for (int i = 1;i<=5;i++)
             {
-                for (int j = 1; j <= i; j++)
+                for(int j=1;j<=i;j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+            for(int k=4;k>=1;k--)
+            {
+                for(int m=1;m<=k;m++)
                 {
                     Console.Write("*");
                 }
