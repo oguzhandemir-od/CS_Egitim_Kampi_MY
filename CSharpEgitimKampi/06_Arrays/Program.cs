@@ -71,17 +71,47 @@ namespace _06_Arrays
 
             #region Finding The Maximum Number in an Array
 
-            int[] myArray = { 47, 85, 95, 41, 25, 635, 789, 86, 100 };
+            //int[] myArray = { 47, 85, 95, 41, 25, 635, 789, 86, 100 };
 
-            int maxNumber = myArray[0];
+            //int maxNumber = myArray[0];
 
-            for (int i = 1; i < myArray.Length; i++)
-            {
-                if (myArray[i] > maxNumber)
-                    maxNumber = myArray[i];
-            }
+            //for (int i = 1; i < myArray.Length; i++)
+            //{
+            //    if (myArray[i] > maxNumber)
+            //        maxNumber = myArray[i];
+            //}
 
-            Console.WriteLine(maxNumber);
+            //Console.WriteLine(maxNumber);
+
+            #endregion
+
+            #region Array Methods
+
+            //string[] people = { "Ali", "Ahmet", "Ayşe", "Buse", "Cem", "Deniz" };
+            //Console.WriteLine(people.Length);
+
+            //int[] numbers = { 45, 85, 52, 41, 86, 10, 22, 35 };
+            //Array.Sort(numbers);
+
+            //for(int i=0; i < numbers.Length; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
+
+            //int[] numbers = { 45, 85, 52, 41, 86, 10, 22, 35 };
+            //Array.Reverse(numbers);
+
+            //for(int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
+
+            //string[] customers = { "Ali", "Buse", "Ayşegül", "Merve", "Çınar", "Kaya" };
+            //int index = Array.IndexOf(customers, "Merve");
+            //Console.WriteLine(index);
+
+            //int[] numbers = { 45, 85, 96, 63, 74, 10, 25, 22, 36 };
+            //Console.WriteLine("Dizinin En Büyük Elemanı: " + numbers.Max() + " Dizinin En Küçük Elemanı: " + numbers.Min());
 
             #endregion
 
