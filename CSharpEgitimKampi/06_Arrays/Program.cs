@@ -115,6 +115,60 @@ namespace _06_Arrays
 
             #endregion
 
+            #region Receiving Input
+
+            //string[] cities = new string[5];
+
+            //for (int i = 0; i < cities.Length; i++)
+            //{
+            //    Console.Write($"Lütfen {i + 1}. şehri giriniz: ");
+            //    cities[i] = Console.ReadLine();
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("---------------");
+
+            //for(int  i = 0; i < cities.Length;i++)
+            //{
+            //    Console.WriteLine(cities[i]);
+            //}
+
+            //int[] numbers = new int[5];
+            //int sum = 0;
+
+            //for(int i=0; i<numbers.Length; i++)
+            //{
+            //    numbers[i] = int.Parse(Console.ReadLine());
+            //    sum += numbers[i];
+            //}
+
+            //Console.WriteLine(sum);
+
+            //int[] numbers = new int[10];
+
+            //for(int i = 0; i < numbers.Length; i++)
+            //{
+            //    numbers[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //Console.WriteLine("Çift Sayılar");
+
+            //for(int i = 0; i < numbers.Length;i++)
+            //{
+            //    if(numbers[i] %2 == 0)
+            //        Console.WriteLine(numbers[i]);
+            //}
+
+            //Console.WriteLine("Tek Sayılar");
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] % 2 != 0)
+            //        Console.WriteLine(numbers[i]);
+            //}
+
+            #endregion
+
             Console.ReadKey();
         }
     }
