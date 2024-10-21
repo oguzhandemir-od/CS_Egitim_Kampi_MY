@@ -69,6 +69,22 @@ namespace _06_Arrays
 
             #endregion
 
+            #region Finding The Maximum Number in an Array
+
+            int[] myArray = { 47, 85, 95, 41, 25, 635, 789, 86, 100 };
+
+            int maxNumber = myArray[0];
+
+            for (int i = 1; i < myArray.Length; i++)
+            {
+                if (myArray[i] > maxNumber)
+                    maxNumber = myArray[i];
+            }
+
+            Console.WriteLine(maxNumber);
+
+            #endregion
+
             Console.ReadKey();
         }
     }
