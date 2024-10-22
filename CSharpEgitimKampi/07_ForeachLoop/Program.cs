@@ -44,7 +44,27 @@ namespace _07_ForeachLoop
 
             //Console.WriteLine(total);
 
+            //List<int> numbers = new List<int>()
+            //{
+            //    1,2,3,4,5,8
+            //};
+
+            //foreach(int number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+
+            //string word = "Merhaba";
+
+            //foreach(char c in word)
+            //{
+            //    Console.WriteLine(c);
+            //}
+
+
+
             #endregion
+
 
             Console.ReadKey();
         }
