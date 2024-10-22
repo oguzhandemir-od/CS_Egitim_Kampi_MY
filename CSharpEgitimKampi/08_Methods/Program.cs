@@ -84,9 +84,42 @@ namespace _08_Methods
 
             #endregion
 
+            #region Methods Returning Value with Parameters
+
+            //string CountryCard(string countryName, string capital, string flagColor)
+            //{
+            //    string cardInfo = "Ülke: " + countryName + " - Başkent:  " + capital + " - Bayrak Rengi: " + flagColor;
+            //    return cardInfo;
+            //}
+
+            //string x, y, z;
+            //Console.Write("Ülke Adını Giriniz: ");
+            //x = Console.ReadLine();
+
+            //Console.Write("Başkenti Giriniz: ");
+            //y = Console.ReadLine();
+
+            //Console.Write("Bayrak Rengini Giriniz: ");
+            //z = Console.ReadLine();
+
+            //Console.WriteLine(CountryCard(x, y, z));
+            //Console.WriteLine(CountryCard("Türkiye", "Ankara", "Kırmızı-Beyaz");
+
+            //int Sum(int number1, int number2)
+            //{
+            //    int result = number1 + number2;
+            //    return result;
+            //}
+
+            //Console.WriteLine(Sum(45, 98));
+            //Console.WriteLine(Sum(36, 25));
+            //Console.WriteLine(Sum(44, 36));
+
+            #endregion
+
             Console.ReadKey();
         }
 
-        
+
     }
 }
