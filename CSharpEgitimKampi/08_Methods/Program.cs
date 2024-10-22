@@ -117,6 +117,23 @@ namespace _08_Methods
 
             #endregion
 
+            #region Example
+
+            string ExamResult(string student, int exam1, int exam2, int exam3)
+            {
+                int result = (exam1 + exam2 + exam3) / 3;
+                if (result >= 50)
+                    return student + " isimli öğrenci dersi geçti. Ortalama: " + result;
+                else
+                    return student + " isimli öğrenci dersten kaldı. Ortalama: " + result;
+            }
+
+            Console.WriteLine(ExamResult("Ali", 25, 41, 85));
+            Console.WriteLine(ExamResult("Ayşe", 36, 88, 33));
+
+
+            #endregion
+
             Console.ReadKey();
         }
 
