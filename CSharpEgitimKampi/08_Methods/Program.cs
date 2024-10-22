@@ -36,6 +36,33 @@ namespace _08_Methods
 
             #endregion
 
+            #region Void Methods with Parameters
+
+            //void WriteMethod(string customerName)
+            //{
+            //    Console.WriteLine(customerName);
+            //}
+
+            //WriteMethod("Mehmet Yıldırım");
+
+            //void CustomerCard(string name,string surname)
+            //{
+            //    Console.WriteLine("Müşteri: " + name + " " + surname);
+            //}
+
+            //CustomerCard("Mehmet","Yıldız");
+            //CustomerCard("Ayşegül", "Kaya");
+
+            //void Sum(int number1,int number2,int number3)
+            //{
+            //    int result=number1+number2+number3;
+            //    Console.WriteLine(result);
+            //}
+
+            //Sum(4, 5, 6);
+
+            #endregion
+
             Console.ReadKey();
         }
 
