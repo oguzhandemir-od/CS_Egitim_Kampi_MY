@@ -63,6 +63,27 @@ namespace _08_Methods
 
             #endregion
 
+            #region Methods Returning Value without Parameters
+
+            //string CustomerName()
+            //{
+            //    return "Buse Yıldız";
+            //}
+
+            //CustomerName();
+
+            //string StudentCard()
+            //{
+            //    string name = "Ali";
+            //    string surname = "Kaya";
+
+            //    return name + " " + surname;
+            //}
+
+            //Console.WriteLine(StudentCard());
+
+            #endregion
+
             Console.ReadKey();
         }
 
