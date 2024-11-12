@@ -59,22 +59,42 @@ namespace _10_DatabaseCrud
 
             #region Listing Products
 
+            //SqlConnection connection = new SqlConnection("Data Source=DESKTOP-CR14I0T;Initial Catalog=EgitimKampiDb;" +
+            //    "Integrated Security=true");
+            //connection.Open();
+            //SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
+            //SqlDataAdapter adapter = new SqlDataAdapter(command);
+            //DataTable dataTable = new DataTable();
+            //adapter.Fill(dataTable);
+
+            //foreach (DataRow row in dataTable.Rows)
+            //{
+            //    foreach (var item in row.ItemArray)
+            //    {
+            //        Console.Write(item.ToString() + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //connection.Close();
+
+            #endregion
+
+            #region Deleting Products
+
+            Console.Write("Silinecek ürün ID: ");
+            int productId=int.Parse(Console.ReadLine());
+
             SqlConnection connection = new SqlConnection("Data Source=DESKTOP-CR14I0T;Initial Catalog=EgitimKampiDb;" +
                 "Integrated Security=true");
             connection.Open();
-            SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            DataTable dataTable = new DataTable();
-            adapter.Fill(dataTable);
 
-            foreach (DataRow row in dataTable.Rows)
-            {
-                foreach (var item in row.ItemArray)
-                {
-                    Console.Write(item.ToString() + " ");
-                }
-                Console.WriteLine();
-            }
+            SqlCommand command = new SqlCommand("Delete From TblProduct Where ProductId=@productId",connection);
+            command.Parameters.AddWithValue("@productId", productId);
+            command.ExecuteNonQuery();
+
+            connection.Close();
+
+            Console.WriteLine("Silme işlemi başarılı!");
 
             #endregion
 
