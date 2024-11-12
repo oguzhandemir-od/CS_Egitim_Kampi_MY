@@ -30,6 +30,32 @@ namespace _10_DatabaseCrud
             //Console.Write("Kategori başarıyla eklendi!");
             #endregion
 
+            #region Adding Product
+
+            string productName;
+            decimal productPrice;
+            // bool productStatus;
+
+            Console.Write("Ürün adı: ");
+            productName= Console.ReadLine();
+            Console.Write("Ürün fiyatı: ");
+            productPrice=decimal.Parse(Console.ReadLine());
+
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-CR14I0T;Initial Catalog=EgitimKampiDb;" +
+                "Integrated Security=true");
+            connection.Open();
+            SqlCommand command = new SqlCommand("Insert Into TblProduct (ProductName, ProductPrice, ProductStatus)" +
+                "values (@productName,@productPrice,@productStatus)", connection);
+            command.Parameters.AddWithValue("@productName", productName);
+            command.Parameters.AddWithValue("@productPrice", productPrice);
+            command.Parameters.AddWithValue("@productStatus", true);
+            command.ExecuteNonQuery();
+            connection.Close();
+
+            Console.WriteLine("Ürün eklemesi başarılı!");
+
+            #endregion
+
             Console.ReadKey();
         }
         
