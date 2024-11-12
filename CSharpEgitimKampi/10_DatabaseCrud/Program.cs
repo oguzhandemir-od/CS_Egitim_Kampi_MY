@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -36,28 +37,49 @@ namespace _10_DatabaseCrud
             decimal productPrice;
             // bool productStatus;
 
-            Console.Write("Ürün adı: ");
-            productName= Console.ReadLine();
-            Console.Write("Ürün fiyatı: ");
-            productPrice=decimal.Parse(Console.ReadLine());
+            //Console.Write("Ürün adı: ");
+            //productName= Console.ReadLine();
+            //Console.Write("Ürün fiyatı: ");
+            //productPrice=decimal.Parse(Console.ReadLine());
+
+            //SqlConnection connection = new SqlConnection("Data Source=DESKTOP-CR14I0T;Initial Catalog=EgitimKampiDb;" +
+            //    "Integrated Security=true");
+            //connection.Open();
+            //SqlCommand command = new SqlCommand("Insert Into TblProduct (ProductName, ProductPrice, ProductStatus)" +
+            //    "values (@productName,@productPrice,@productStatus)", connection);
+            //command.Parameters.AddWithValue("@productName", productName);
+            //command.Parameters.AddWithValue("@productPrice", productPrice);
+            //command.Parameters.AddWithValue("@productStatus", true);
+            //command.ExecuteNonQuery();
+            //connection.Close();
+
+            //Console.WriteLine("Ürün eklemesi başarılı!");
+
+            #endregion
+
+            #region Listing Products
 
             SqlConnection connection = new SqlConnection("Data Source=DESKTOP-CR14I0T;Initial Catalog=EgitimKampiDb;" +
                 "Integrated Security=true");
             connection.Open();
-            SqlCommand command = new SqlCommand("Insert Into TblProduct (ProductName, ProductPrice, ProductStatus)" +
-                "values (@productName,@productPrice,@productStatus)", connection);
-            command.Parameters.AddWithValue("@productName", productName);
-            command.Parameters.AddWithValue("@productPrice", productPrice);
-            command.Parameters.AddWithValue("@productStatus", true);
-            command.ExecuteNonQuery();
-            connection.Close();
+            SqlCommand command = new SqlCommand("Select * From TblProduct", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
 
-            Console.WriteLine("Ürün eklemesi başarılı!");
+            foreach (DataRow row in dataTable.Rows)
+            {
+                foreach (var item in row.ItemArray)
+                {
+                    Console.Write(item.ToString() + " ");
+                }
+                Console.WriteLine();
+            }
 
             #endregion
 
             Console.ReadKey();
         }
-        
+
     }
 }
