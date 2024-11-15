@@ -11,6 +11,7 @@ namespace CSharspEgitimKampi301.EntityLayer.Concrete
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public bool CategoryStatus { get; set; }
+        public virtual List<Product> Products { get; set; }
 
     }
 }
